@@ -33,5 +33,5 @@ steps:
   displayName: 'Install dependencies'
 
 - script: |
-    py gatekeeper.py -r http://arch-ps-7:8087/rest -u admin -p admin -a rocky1
-  displayName: 'py run'
+    python gatekeeper.py -r http://arch-ps-7:8087/rest -u admin -p admin -a rocky1
+  displayName: 'python run'
