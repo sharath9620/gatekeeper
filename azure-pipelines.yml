@@ -25,5 +25,5 @@ steps:
   displayName: 'Install dependencies'
 
 - script: |
-    python gatekeeper.py -r http://arch-ps-7:8087/rest -u admin -p admin -a rocky1
+    python C:\Users\SHP\Desktop\Python Development\SERVTOOL-33\gatekeeper\gatekeeper\gatekeeper.py -r http://arch-ps-7:8087/rest -u admin -p admin -a rocky1
   displayName: 'python run'
