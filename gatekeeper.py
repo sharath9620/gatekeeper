@@ -22,7 +22,10 @@ if __name__ == "__main__":
     else:
         snapshot_id = aip.get_latest_snapshot(domain_id)['id']
         df=aip.get_rules(domain_id,snapshot_id,60017,critical=True,non_critical=False,start_row=1,max_rows=999999)
-        df=json_normalize(df['component'])
-        added=len(df[df['status'] == 'added'])
-        log.info(f'This snapshot added {added} new violations.')
-        exit(added)
+        if df.empty:
+            log.info(f'No violations found.')
+        else:
+            df=json_normalize(df['component'])
+            added=len(df[df['status'] == 'added'])
+            log.info(f'This snapshot added {added} new violations.')
+        exit(0)
