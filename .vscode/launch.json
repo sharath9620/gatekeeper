@@ -10,8 +10,8 @@
             "request": "launch",
             "program": "${file}",
             "console": "integratedTerminal",
-            "justMyCode": true,
-            "args": ["-r","http://arch-ps-7:8087/rest","-u","admin","-p","admin","-a","rocky1"],
+            "justMyCode": false,
+            "args": ["-r","http://arch-ps-3:8087/rest","-u","admin","-p","admin","-a","testDB"],
         }
     ]
 }
