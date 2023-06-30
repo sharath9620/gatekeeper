@@ -8,7 +8,7 @@ def send_email():
         
     # Define these once; use them twice!
     strFrom = 's.p@castsoftware.com'
-    strTo = 's.p@castsoftware.com,b.prakash@castsoftware.com,s.mahton@castsoftware.com'
+    strTo = 's.mahton@castsoftware.com'
     HOST = 'email-smtp.eu-central-1.amazonaws.com'
     PORT = 587
     USERNAME_SMTP = 'AKIAZV4FQR23NGDUIIOI'
