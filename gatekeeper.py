@@ -10,8 +10,6 @@ from sendmail import send_email
 
 if __name__ == "__main__":
 
-new line added
-
     measures = {
         '60017':'TQI',
         '60013':'Robustness',
